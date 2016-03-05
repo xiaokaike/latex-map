@@ -13,20 +13,6 @@
 
 
 // var config = [{
-//   title: "基础数学",
-//   items: [{
-//     "title": "基础数学",
-//     "values": [
-//       "pm", "infty", "=", "sim", "times", "div", "!", "<", "ll", ">",
-//       "gg", "leq", "geq", "mp", "cong", "equiv", "propto", "approx",
-//       "forall", "partial", "surd", "cup", "cap", "varnothing", "%",
-//       "circ", "exists", "nexists", "in", "ni", "gets", "uparrow",
-//       "to", "downarrow", "leftrightarrow", "therefore", "because",
-//       "+", "-", "neg", "ast", "cdot", "vdots", /* "ddots",*/ "aleph",
-//       "beth", "blacksquare"
-//     ]
-//   }]
-// }, {
 //   title: "求反关系运算符",
 //   items: [{
 //     title: "求反关系运算符",

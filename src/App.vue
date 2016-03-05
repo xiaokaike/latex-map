@@ -17,10 +17,24 @@
 
     </section>
     
-    <section>
+    <section class="map-wrap latter-wrap">
       <h3 class="h3 bg-blue">{{greekLatters.title}}</h3>
 
       <div class="" v-for="item in greekLatters.items">
+        <h4 class="h4 caps">{{item.title}}</h4>
+        <ul class="clearfix list-reset">
+          <li class="left latter" v-for="latter in item.values" data-latex="{{latter}}">
+            <span class="latex"> $${{latter}}$$</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="map-wrap latter-wrap">
+      <h3 class="h3 bg-blue">{{maths.title}}</h3>
+
+      <div class="" v-for="item in maths.items">
         <h4 class="h4 caps">{{item.title}}</h4>
         <ul class="clearfix list-reset">
           <li class="left latter" v-for="latter in item.values" data-latex="{{latter}}">
@@ -55,7 +69,8 @@ export default {
       title: 'latex map',
       latexMap: maps.conf,
       latters: maps.latters,
-      greekLatters: maps.greek
+      greekLatters: maps.greek,
+      maths: maps.maths
     }
   },
   ready () {
@@ -85,6 +100,7 @@ body {
 .map-wrap{
   border: 1px solid #ddd;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .latex-map-wrap{
